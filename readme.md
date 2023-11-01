@@ -1,5 +1,3 @@
-<img width="1466" alt="Screenshot 2023-11-01 at 22 27 04" src="https://github.com/dhmssb/simple-auth/assets/76139234/88953a91-0738-4231-8578-8d1f9df0b971"># Simple auth
-
 
 
 Clone this repository first
