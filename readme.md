@@ -64,7 +64,7 @@ go install golang.org/x/vuln/cmd/govulncheck@latest
 govulncheck ./...
 ```
 
-#### vulnerability 
+#### vulnerability test output
 <img width="1466" alt="Screenshot 2023-11-01 at 22 27 04" src="https://github.com/dhmssb/simple-auth/assets/76139234/b7501389-d514-45ad-8402-a00f5aac4608">
 
 In summary, the report highlights specific vulnerabilities in this code and its dependencies, along with information about the vulnerabilities, affected packages, fixed versions, and example traces to help locate the issues in this code. Should take an action to address these vulnerabilities, such as updating packages to versions with fixes or applying appropriate security measures.
