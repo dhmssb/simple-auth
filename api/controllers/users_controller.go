@@ -64,7 +64,37 @@ func (server *Server) GetUser(w http.ResponseWriter, r *http.Request) {
 }
 
 func (server *Server) GetProfile(w http.ResponseWriter, r *http.Request) {
+	// Check if the request includes a Bearer token
+	tokenString := auth.ExtractToken(r)
+	if tokenString == "" {
+		responses.ERROR(w, http.StatusUnauthorized, errors.New("authentication failed"))
+		return
+	}
 
+	// Verify the Bearer token
+	err := auth.TokenValid(r)
+	if err != nil {
+		responses.ERROR(w, http.StatusUnauthorized, err)
+		return
+	}
+
+	// Extract the user ID from the token
+	userID, err := auth.ExtractTokenID(r)
+	if err != nil {
+		responses.ERROR(w, http.StatusUnauthorized, err)
+		return
+	}
+
+	// Fetch the user's profile based on the user ID
+	user := models.User{}
+	userGotten, err := user.FindUserByID(server.DB, userID)
+	if err != nil {
+		responses.ERROR(w, http.StatusBadRequest, err)
+		return
+	}
+
+	// Return the user's profile in the response
+	responses.JSON(w, http.StatusOK, userGotten)
 }
 
 func (server *Server) DeleteUser(w http.ResponseWriter, r *http.Request) {
