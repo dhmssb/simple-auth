@@ -1,4 +1,4 @@
-
+# Simple-auth
 
 Clone this repository first
 ```sh
