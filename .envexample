@@ -7,6 +7,9 @@ DB_PASSWORD=password
 DB_NAME=db-name
 DB_PORT=5432 #Default postgres port
 
+PGADMIN_DEFAULT_EMAIL=live@admin.com
+PGADMIN_DEFAULT_PASSWORD=password
+
 # Postgres Test
 TestApiSecret=98hbun98h
 TestDbHost=127.0.0.1
@@ -15,3 +18,5 @@ TestDbUser=username
 TestDbPassword=password
 TestDbName=db-test
 TestDbPort=5432
+
+SEED=false
