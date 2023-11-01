@@ -1,4 +1,4 @@
-# Simple auth
+<img width="1466" alt="Screenshot 2023-11-01 at 22 27 04" src="https://github.com/dhmssb/simple-auth/assets/76139234/88953a91-0738-4231-8578-8d1f9df0b971"># Simple auth
 
 
 
@@ -56,7 +56,7 @@ http:{{url}}/login
 ```
 
 
-#### Vulnarebility Test
+#### Vulnerability Test
 1. Instalation govulncheck:
 ```sh
 go install golang.org/x/vuln/cmd/govulncheck@latest
@@ -65,3 +65,9 @@ go install golang.org/x/vuln/cmd/govulncheck@latest
 ```sh
 govulncheck ./...
 ```
+
+#### vulnerability 
+<img width="1466" alt="Screenshot 2023-11-01 at 22 27 04" src="https://github.com/dhmssb/simple-auth/assets/76139234/b7501389-d514-45ad-8402-a00f5aac4608">
+
+
+
