@@ -41,6 +41,7 @@ docker-compose -f docker-compose.test.yml up --build --abort-on-container-exit
 
 
 
+example how to do login:
 ```sh
 http:{{url}}/login
 ```
@@ -52,4 +53,15 @@ http:{{url}}/login
     "email": "userdua@gmail.com",
     "password": "password"
 }
+```
+
+
+#### Vulnarebility Test
+1. Instalation govulncheck:
+```sh
+go install golang.org/x/vuln/cmd/govulncheck@latest
+```
+2. use govulncheck:
+```sh
+govulncheck ./...
 ```
