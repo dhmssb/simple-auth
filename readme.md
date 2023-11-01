@@ -15,6 +15,11 @@ how to run manually:
 go run main.go
 ```
 
+how to run tests:
+```sh
+go test -cover -coverpkg=./api/... ./tests/...
+```
+
 
 how to run with docker:
 1. run
