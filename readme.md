@@ -57,9 +57,18 @@ http:{{url}}/login
     "password": "password"
 }
 ```
+## Technology Stack
+- Golang :
+  - Gorilla Mux
+  - Gorm
+  - assert
+- PostgreSQL
+- Jwt
+- Docker
+- Govulncheck
 
 
-#### Vulnerability Test
+### Vulnerability Test
 1. Instalation govulncheck:
 ```sh
 go install golang.org/x/vuln/cmd/govulncheck@latest
